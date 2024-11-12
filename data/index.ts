@@ -1,7 +1,6 @@
 export const navItems = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
-    { name: "Testimonials", link: "#testimonials" },
     { name: "Contact", link: "#contact" },
   ];
   
@@ -74,17 +73,17 @@ export const navItems = [
       id: 1,
       title: "Full Stack Uber App (React Native)",
       des: "React Native ile geliştirilen bu uygulama, kullanıcıların kolayca araç çağırmasını ve sürücülerle iletişim kurmasını sağlar.",
-      img: "/p1.svg",
+      img: "/p1.png",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-      link: "https://github.com/adrianhajdin?tab=repositories",
+      link: "https://github.com/KUTLUSKA/knit_app_v1",
     },
     {
       id: 2,
       title: "Next.js Portfolio",
       des: "As you can see on live, all about me and my projects.",
-      img: "/p2.svg",
+      img: "/p2.png",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-      link: "https://github.com/adrianhajdin/zoom-clone",
+      link: "https://github.com/KUTLUSKA/My_New_Next.js_Portfolio",
     },
     {
       id: 3,
@@ -92,15 +91,23 @@ export const navItems = [
       des: "Kullanıcı tercihlerini analiz ederek müzik önerileri sunan NLP tabanlı web sitesi.",
       img: "/p3.svg",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-      link: "https://github.com/adrianhajdin/ai_saas_app",
+      link: "",
     },
     {
       id: 4,
       title: "Dewey Classification APP (React Native)",
       des: "React Native ile geliştirilen bu uygulama, Dewey Onlu Sınıflandırma Sistemi'ni kullanarak kitapları kategorilere ayıran bir kütüphane uygulamasıdır. Kullanıcılar, kitapları kolayca arayabilir ve sınıflandırabilir.",
-      img: "/p4.svg",
+      img: "/p4.png",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-      link: "https://github.com/adrianhajdin/iphone",
+      link: "https://github.com/KUTLUSKA/ReactNativeDewey",
+    },
+    {
+      id: 5,
+      title: "Ticket_Finder",
+      des: "İşlerimden dolayı sürekli son anda bilet almaktan yorulduğum için pyPuppetter ile web scrapping projesi otomatik bilet buluyor ve senin için tutuyor",
+      img: "/p5.png",
+      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+      link: "https://github.com/KUTLUSKA/ticket_finder-",
     },
   ];
   
@@ -173,28 +180,28 @@ export const navItems = [
   export const workExperience = [
     {
       id: 1,
-      title: "Frontend Engineer Intern",
-      desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+      title: "Full Stack Engineer at Verinova LTD.",
+      desc: "Assisted in the development of a web-based platform using React Native, enhancing interactivity.",
       className: "md:col-span-2",
       thumbnail: "/exp1.svg",
     },
     {
       id: 2,
-      title: "Mobile App Dev - JSM Tech",
-      desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+      title: "System Engineering Intern at Türk Standartları Enstitüsü",
+      desc: "I learned how to manage with big data, servers and cloud systems also Devops.",
       className: "md:col-span-2", // change to md:col-span-2
       thumbnail: "/exp2.svg",
     },
     {
       id: 3,
-      title: "Freelance App Dev Project",
+      title: "Freelance App Dev Projects",
       desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
       className: "md:col-span-2", // change to md:col-span-2
       thumbnail: "/exp3.svg",
     },
     {
       id: 4,
-      title: "Lead Frontend Developer",
+      title: "Frontend Developer at Fiverr",
       desc: "Developed and maintained user-facing features using modern frontend technologies.",
       className: "md:col-span-2",
       thumbnail: "/exp4.svg",
