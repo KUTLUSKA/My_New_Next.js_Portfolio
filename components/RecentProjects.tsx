@@ -29,7 +29,7 @@ const RecentProjects = () => {
                 <h1 className="font-bold lg:text-2xl mg:text-xl text-base line-clamp-1 text-purple">
                   {title}
                 </h1>
-                <p className=" lg:text-xl lg:font-normal font-light font-sm line-clamp-2">
+                <p className=" lg:text-xl lg:font-normal text-sm font-light font-sm line-clamp-2">
                   {des}
                 </p>
                 <div className="flex items-center justify-between mt-7 mb-3">
@@ -45,7 +45,7 @@ const RecentProjects = () => {
                     ))}
                   </div>
                   <div className="flex justify-center items-center">
-                    <p className="flex lg:text-lg md:text-xs">
+                    <p className="flex lg:text-lg text-xs">
                       Check Live Version
                     </p>
                     <FaLocationArrow className="ms-3" color="#CBACF9" />
