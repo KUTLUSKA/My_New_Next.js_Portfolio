@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
 import {
   motion,
   useAnimationFrame,
@@ -7,7 +7,6 @@ import {
   useMotionValue,
   useTransform,
 } from "framer-motion";
-import { useRef } from "react";
 import { cn } from "@/lib/utils";
 
 export function Button({
@@ -22,23 +21,23 @@ export function Button({
 }: {
   borderRadius?: string;
   children: React.ReactNode;
-  as?: any;
+  as?: React.ElementType;
   containerClassName?: string;
   borderClassName?: string;
   duration?: number;
   className?: string;
-  [key: string]: any;
+  [key: string]: any; // Burada `any` kullanmak zorunda kalıyorsanız, `Component` türüne göre tür belirlemek daha doğru olur.
 }) {
   return (
     <Component
       className={cn(
-        "bg-transparent relative text-xl  md:col-span-2 p-[1px] overflow-hidden ",
+        "bg-transparent relative text-xl  md:col-span-2  p-[1px] overflow-hidden ",
         containerClassName
       )}
       style={{
         borderRadius: borderRadius,
       }}
-      {...otherProps}
+      {...otherProps} // Bu kısımda her türlü özellik geçilebilir.
     >
       <div
         className="absolute inset-0"
@@ -80,9 +79,9 @@ export const MovingBorder = ({
   duration?: number;
   rx?: string;
   ry?: string;
-  [key: string]: any;
+  [key: string]: any; // Burada da `any` kullanımı mevcut. Daha spesifik türler kullanmak daha iyi olabilir.
 }) => {
-  const pathRef = useRef<any>();
+  const pathRef = useRef<SVGRectElement | null>(null); // SVG rect elementine referans veriyoruz
   const progress = useMotionValue<number>(0);
 
   useAnimationFrame((time) => {
@@ -95,11 +94,11 @@ export const MovingBorder = ({
 
   const x = useTransform(
     progress,
-    (val) => pathRef.current?.getPointAtLength(val).x
+    (val) => pathRef.current?.getPointAtLength(val).x ?? 0
   );
   const y = useTransform(
     progress,
-    (val) => pathRef.current?.getPointAtLength(val).y
+    (val) => pathRef.current?.getPointAtLength(val).y ?? 0
   );
 
   const transform = useMotionTemplate`translateX(${x}px) translateY(${y}px) translateX(-50%) translateY(-50%)`;
@@ -112,7 +111,7 @@ export const MovingBorder = ({
         className="absolute h-full w-full"
         width="100%"
         height="100%"
-        {...otherProps}
+        {...otherProps} // Diğer props'ları burada geçiyoruz
       >
         <rect
           fill="none"
@@ -120,7 +119,7 @@ export const MovingBorder = ({
           height="100%"
           rx={rx}
           ry={ry}
-          ref={pathRef}
+          ref={pathRef} // SVG rect'e referans veriyoruz
         />
       </svg>
       <motion.div
