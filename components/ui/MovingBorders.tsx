@@ -26,7 +26,6 @@ export function Button({
   borderClassName?: string;
   duration?: number;
   className?: string;
-  [key: string]: any; // Burada `any` kullanmak zorunda kalıyorsanız, `Component` türüne göre tür belirlemek daha doğru olur.
 }) {
   return (
     <Component
@@ -79,7 +78,6 @@ export const MovingBorder = ({
   duration?: number;
   rx?: string;
   ry?: string;
-  [key: string]: any; // Burada da `any` kullanımı mevcut. Daha spesifik türler kullanmak daha iyi olabilir.
 }) => {
   const pathRef = useRef<SVGRectElement | null>(null); // SVG rect elementine referans veriyoruz
   const progress = useMotionValue<number>(0);
