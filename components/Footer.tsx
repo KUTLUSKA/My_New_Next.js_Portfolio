@@ -17,16 +17,16 @@ const Footer = () => {
 
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">
-          Ready to take <span className="text-purple">your</span> digital
-          presence to the next level?
+          Web'de var olmaya <span className="text-purple">hazır mısınız?</span>
         </h1>
         <p className="text-white-200 md:mt-10 my-5 text-center">
-          Reach out to me today and let&apos;s discuss how I can help you
-          achieve your goals.
+          Bana sosyal medya hesaplarımdan veya mail atarak ulaşın! <br /> İş
+          modelinize en uygun şekilde sizi hedeflerinize ulaştıracak dijital
+          ortamınızı kuralım.
         </p>
-        <a href="mailto:contact@jsmastery.pro">
+        <a href="kutluhan.unsal@hotmail.com">
           <MagicButton
-            title="Let's get in touch"
+            title="Bana Mail Atın"
             icon={<FaLocationArrow />}
             position="right"
           />

@@ -9,7 +9,7 @@ export const navItems = [
   export const gridItems = [
     {
       id: 1,
-      title: "Kendini güncel teknolojileri öğrenmeye odaklamış bir bilgisayar mühendisiyim.",
+      title: "Ben Kutluhan!",
       description: "",
       className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh] ",
       imgClassName: "w-full h-full",
@@ -39,7 +39,7 @@ export const navItems = [
     },
     {
       id: 4,
-      title: "Geliştirme tutkusuna sahip bir teknoloji meraklısı.",
+      title: "Geliştirme tutkusuna sahip sürekli yeni teknolojiler öğrenen bir teknoloji meraklısıyım.",
       description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-1",
       imgClassName: "",
@@ -50,7 +50,7 @@ export const navItems = [
   
     {
       id: 5,
-      title: "Şu anda JavaScript framework'leri ile projeler geliştiriyorum.",
+      title: "Şu anda JavaScript framework'leri ile web ve mobil platformlar için projeler geliştiriyorum.",
       description: "Ne Yapıyorum ?",
       className: "md:col-span-3 md:row-span-2",
       imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
