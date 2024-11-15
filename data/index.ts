@@ -1,3 +1,5 @@
+import { link } from "fs";
+
 export const navItems = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
@@ -9,7 +11,7 @@ export const navItems = [
       id: 1,
       title: "Kendini güncel teknolojileri öğrenmeye odaklamış bir bilgisayar mühendisiyim.",
       description: "",
-      className: "lg:col-span-3 md:col-span-6 text-md md:row-span-4 lg:min-h-[60vh] ",
+      className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh] ",
       imgClassName: "w-full h-full",
       titleClassName: "justify-center",
       img: "/final.jpg",
@@ -212,13 +214,16 @@ export const navItems = [
     {
       id: 1,
       img: "/git.svg",
+      link: "https://github.com/KUTLUSKA"
     },
     {
       id: 2,
       img: "/twit.svg",
+      link: "https://x.com/KUTLUSKAS"
     },
     {
       id: 3,
       img: "/link.svg",
+      link: "https://www.linkedin.com/in/kutluhanunsal/"
     },
   ];
