@@ -93,7 +93,7 @@ export const navItems = [
       des: "Kullanıcı tercihlerini analiz ederek müzik önerileri sunan NLP tabanlı web sitesi.",
       img: "/p3.svg",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-      link: "",
+      link: "https://github.com/KUTLUSKA/knit_app_v1",
     },
     {
       id: 4,
