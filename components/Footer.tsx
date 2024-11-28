@@ -25,7 +25,7 @@ const Footer = () => {
           modelinize en uygun şekilde sizi hedeflerinize ulaştıracak dijital
           ortamınızı kuralım.
         </p>
-        <a href="kutluhan.unsal@hotmail.com">
+        <a href="mailto:kutluhan.unsal@hotmail.com">
           <MagicButton
             title="Bana Mail Atın"
             icon={<FaLocationArrow />}
