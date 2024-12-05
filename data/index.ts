@@ -19,7 +19,7 @@ export const navItems = [
     },
     {
       id: 2,
-      title: "Güçlü iletişim becerilerimle, farklı zaman dilimlerinde çalışmaya oldukça açığım.",
+      title: "Güçlü iletişim becerilerimle, öğrenen kendini geliştiren bir bilgisayar mühendisiyim.",
       description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
